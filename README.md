@@ -9,7 +9,7 @@
 ---
 
 ## Installation
-- This mod requires [Bloodstone](https://v-rising.thunderstore.io/package/deca/Bloodstone/) and (Optionally) [VampireCommandFrameWork](https://v-rising.thunderstore.io/package/deca/VampireCommandFramework/) to work.
+- This mod requires [Bloodstone](https://v-rising.thunderstore.io/package/deca/Bloodstone/) and [VampireCommandFramework](https://v-rising.thunderstore.io/package/deca/VampireCommandFramework/) to work.
 - Make sure you use [ServerLaunchFix](https://v-rising.thunderstore.io/package/Mythic/ServerLaunchFix/) if you're running a server via client!
 - Place the **_GroundItemPickup.dll_** file inside of `(Vrising Server)\BepInEx\plugins` folder
 

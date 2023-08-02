@@ -8,6 +8,8 @@ using HarmonyLib;
 namespace GroundItemPickup;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+[BepInDependency("gg.deca.VampireCommandFramework")]
+[BepInDependency("gg.deca.Bloodstone")]
 public class Plugin : BasePlugin, IRunOnInitialized
 {
     
@@ -46,7 +48,7 @@ public class Plugin : BasePlugin, IRunOnInitialized
         }
         else
         {
-            Log.LogInfo("This mod has testing commands. You need to install VampireCommandFramework to use them.");
+            Log.LogInfo("This mod has addItem command. You need to install VampireCommandFramework to use it.");
         }
         
         // Harmony patching
