@@ -15,10 +15,6 @@
 
 ---
 
-## Support me!
-* I have a Patreon now so please support me [Here](https://patreon.com/user?u=97347013) if you want to.
-
-
 ## Developer & credits
 <details>
 
