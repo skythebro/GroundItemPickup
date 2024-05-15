@@ -6,6 +6,7 @@ using Unity.Entities;
 using Unity.Transforms;
 using VampireCommandFramework;
 using Il2CppInterop.Runtime;
+using Stunlock.Core;
 
 
 namespace GroundItemPickup;
@@ -72,11 +73,11 @@ public static class ItemUtil
         return *result;
     }
     
-    public static bool TryGiveItem(EntityManager entityManager, NativeHashMap<PrefabGUID, ItemData>? itemDataMap,
+    public static bool TryGiveItem(EntityManager entityManager, NativeParallelHashMap<PrefabGUID, ItemData>? itemDataMap,
         Entity recipient, PrefabGUID itemType, int amount, out int remainingitems, bool dropRemainder = false)
     {
             
-        itemDataMap ??=  VWorld.Game.GetExistingSystem<GameDataSystem>().ItemHashLookupMap;
+        itemDataMap ??=  VWorld.Game.GetExistingSystemManaged<GameDataSystem>().ItemHashLookupMap;
         var itemSettings = AddItemSettings.Create(entityManager, itemDataMap.Value, false, default, default, false, false, dropRemainder);
         AddItemResponse response = InventoryUtilitiesServer.TryAddItem(itemSettings, recipient, itemType, amount);
         remainingitems = response.RemainingAmount;

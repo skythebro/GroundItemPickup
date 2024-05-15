@@ -99,7 +99,7 @@ public static partial class Commands
             {
                 var items = ItemUtil.ClosestItems(ctx, radius);
                 var server = VWorld.Server;
-                var gameDataSystem = server.GetExistingSystem<GameDataSystem>();
+                var gameDataSystem = server.GetExistingSystemManaged<GameDataSystem>();
                 var itemHashLookupMap = gameDataSystem.ItemHashLookupMap;
                 var entityManager = server.EntityManager;
 
@@ -155,7 +155,7 @@ public static partial class Commands
 */
                         InventoryUtilitiesServer.CreateInventoryChangedEvent(entityManager,
                             ctx.Event.SenderCharacterEntity,
-                            droppedItem.ItemType, droppedItem.Amount, InventoryChangedEventType.Obtained);
+                            droppedItem.ItemType, droppedItem.Amount, droppedItem.ItemEntity._Entity ,InventoryChangedEventType.Obtained);
                     }
                 }
 

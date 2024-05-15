@@ -1,5 +1,7 @@
 # GroundItemPickup
 
+Updated to VRising 1.0
+
 # A server-side only mod that allows admins to teleport items to their inventory.
 * This mod basically has one command called `.addItems` Usage: `.addItems [radius]`
 * Feel free to expand upon this. Maybe add a dictionary so players can filter which items they want to be picked up. Or add a coroutine so the server every so often picks up items for all players.
@@ -15,14 +17,10 @@
 
 ---
 
-## Support me!
-* I have a Patreon now so please support me [Here](https://patreon.com/user?u=97347013) if you want to.
-
-
 ## Developer & credits
 <details>
 
-### V rising modding discord [Discord](https://discord.gg/XY5bNtNm4w)
+### V rising modding [Discord](https://discord.gg/XY5bNtNm4w)
 ### Developer
 - `skythebro/skyKDG` - Also known as realsky on discord
 

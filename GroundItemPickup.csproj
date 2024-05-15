@@ -3,20 +3,20 @@
         <TargetFramework>net6.0</TargetFramework>
         <AssemblyName>GroundItemPickup</AssemblyName>
         <Description>Mod that uses a command to pick up items from the ground around the player.</Description>
-        <Version>1.0.0</Version>
+        <Version>1.1.0</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
         <RootNamespace>GroundItemPickup</RootNamespace>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <FileVersion>1.0.0.0</FileVersion>
-        <InformationalVersion>1.0.0+2.Branch.main.Sha.62bb8fcf39ee2ebe62410e48ec8f8fdc72e85b10</InformationalVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <FileVersion>1.1.0.0</FileVersion>
+        <InformationalVersion>1.1.0+2.Branch.main.Sha.62bb8fcf39ee2ebe62410e48ec8f8fdc72e85b10</InformationalVersion>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.668" IncludeAssets="compile" />
         <PackageReference Include="BepInEx.Core" Version="6.0.0-be.668" IncludeAssets="compile" />
         <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
-        <PackageReference Include="VRising.Bloodstone" Version="0.1.*" />
-        <PackageReference Include="VRising.Unhollowed.Client" Version="0.6.5.*" />
+        <PackageReference Include="VRising.Bloodstone" Version="0.2.1" />
+        <PackageReference Include="VRising.Unhollowed.Client" Version="1.0.0.792660001" />
         <PackageReference Include="VRising.VampireCommandFramework" Version="0.8.*" />
     </ItemGroup>
 </Project>
